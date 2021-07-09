@@ -12,7 +12,6 @@
 #include "bunny/package.hpp"
 #include <unity.h>
 
-using namespace bunny;
 
 //
 //  project setup teardown functions if needed
@@ -48,7 +47,7 @@ static void test_simpleAssertCompare(void)
 
 static void test_simpleAssertCall(void)
 {
-    TEST_ASSERT_EQUAL_STRING("Hello, C++ Developer.", greet());
+    TEST_ASSERT_EQUAL_STRING("Hello, C++ Developer.", bunny::greet());
 } // end of test case
 
 //
