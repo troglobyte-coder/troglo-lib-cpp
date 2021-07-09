@@ -11,7 +11,7 @@
 // Param list:
 // -> There is none to speak of at this time.
 //
-const char *greet(void)
+const char *bunny::greet(void)
 {
     return "Hello, C++ Developer.";
 } // end of functions greet
