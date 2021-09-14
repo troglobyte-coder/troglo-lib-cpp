@@ -70,7 +70,7 @@ more please view the API documentation thanks.
 ```cpp
 #include <iostream>
 #include <cstdlib>
-#include <module/package.hpp>
+#include <hyper-ram/package.hpp>
 
 
 //
