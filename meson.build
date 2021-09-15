@@ -1,4 +1,4 @@
-project('Bunny Library', 'cpp',
+project('Ram Library', 'cpp',
     version: '0.1.0',
     meson_version: '>=0.59.0',
     default_options: ['werror=true', 'cpp_std=c++20'])
