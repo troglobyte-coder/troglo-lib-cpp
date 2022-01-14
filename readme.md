@@ -1,4 +1,4 @@
-# 🐐 Ram package
+# Miok package
 
 ## About
 
@@ -36,8 +36,8 @@ in your subprojects directory and include the dependency in your project.
 
 ```console
 [wrap-git]
-directory = ram-module
-url = https://github.com/hyper-ram/module.git
+directory = miok-module
+url = https://github.com/miok-modules/module.git
 revision = main
 
 [provide]
@@ -48,7 +48,7 @@ module = module_dep
 The next step should be to add the package to your Meson project:
 
 ```meson
-module_dep = dependency('ram-module')
+module_dep = dependency('miok-module')
 
 executable('prog', 'main.cpp',
     dependencies : [module_dep])
@@ -70,7 +70,7 @@ more please view the API documentation thanks.
 ```cpp
 #include <iostream>
 #include <cstdlib>
-#include <hyper-ram/package.hpp>
+#include <miok/package.hpp>
 
 
 //
@@ -78,7 +78,7 @@ more please view the API documentation thanks.
 //
 int main()
 {
-    std::cout << ram::greet() << std::endl;
+    std::cout << miok::greet() << std::endl;
     return EXIT_SUCCESS;
 } // end of function main
 
@@ -90,7 +90,7 @@ int main()
 
 You may find that the projects under the visual cube has a community in which you
 can keep up to date on the latest features, apps being developed and news. Simply done by
-joining on [Reddit](https://www.reddit.com/r/native_oklatopian/)
+joining on [Reddit](https://www.reddit.com/r/miok/)
 
 You may find that I have some platforms in which you can follow me and stay updated on what I’m working on.
 
