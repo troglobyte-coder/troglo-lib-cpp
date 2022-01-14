@@ -3,7 +3,7 @@ if get_option('with_tests').enabled()
 
     test_exe = executable('dummy',
         'test_cases.cpp',
-        dependencies : [unity, bunny_dep])
+        dependencies : [unity, miok_dep])
 
     test('Execute project tests', test_exe)
 endif
