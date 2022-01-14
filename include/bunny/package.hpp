@@ -3,16 +3,16 @@
 // author: Michael Brockus
 // gmail: <michaelbrockus@gmail.com>
 
-#ifndef BUNNY_PACKAGE_HPP
-#define BUNNY_PACKAGE_HPP
+#ifndef MIOK_PACKAGE_HPP
+#define MIOK_PACKAGE_HPP
 
 //
 // Macros to control the visibility of functions provided by this package
 //
-#ifdef BUILDING_BUNNY_PACKAGE
-#define BUNNY_PUBLIC __attribute__((visibility("default")))
+#ifdef BUILDING_MIOK_PACKAGE
+#define MIOK_PUBLIC __attribute__((visibility("default")))
 #else
-#define BUNNY_PUBLIC
+#define MIOK_PUBLIC
 #endif
 
 //
@@ -26,9 +26,9 @@
 // package name and everything should just work.
 //
 
-namespace bunny
+namespace miok
 {
-    BUNNY_PUBLIC const char *greet(void);
+    MIOK_PUBLIC const char *greet(void);
 } // namespace bunny
 
-#endif // end of BUNNY_PACKAGE_H
+#endif // end of MIOK_PACKAGE_H
