@@ -9,7 +9,7 @@
 // project since its important to test once implementation against a set
 // of common test cases
 //
-#include "bunny/package.hpp"
+#include "miok/package.hpp"
 #include <unity.h>
 
 
@@ -47,7 +47,7 @@ static void test_simpleAssertCompare(void)
 
 static void test_simpleAssertCall(void)
 {
-    TEST_ASSERT_EQUAL_STRING("Hello, C++ Developer.", bunny::greet());
+    TEST_ASSERT_EQUAL_STRING("Hello, C++ Developer.", miok::greet());
 } // end of test case
 
 //
