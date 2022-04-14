@@ -15,7 +15,7 @@ jobs:
   macos:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v3.0.1
     - uses: actions/setup-python@v2.3.2
       with:
         python-version: '3.9.x'
@@ -37,7 +37,7 @@ jobs:
   windows:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v3.0.1
     - uses: actions/setup-python@v2.3.2
       with:
         python-version: '3.9.x'        
@@ -60,7 +60,7 @@ jobs:
   chrome_book:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v3.0.1
     - uses: nanasess/setup-chromedriver@v1.0.5
     - run: chromedriver --url-base=/wd/hub &
     - run: |
@@ -76,7 +76,7 @@ jobs:
     container:
       image: "michaelbrockus/ubuntu-host:latest"
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v3.0.1
     - run: |
         meson setup build -Dwith_tests=enabled &&
         cppcheck --project=build/compile_commands.json &&
@@ -88,7 +88,7 @@ jobs:
     container:
       image: "michaelbrockus/debian-host:latest"
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v3.0.1
     - run: |
         meson setup build -Dwith_tests=enabled &&
         cppcheck --project=build/compile_commands.json &&
@@ -100,7 +100,7 @@ jobs:
     container:
       image: "michaelbrockus/fedora-host:latest"
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v3.0.1
     - run: |
         meson setup build -Dwith_tests=enabled &&
         cppcheck --project=build/compile_commands.json &&
@@ -112,7 +112,7 @@ jobs:
     container:
       image: "michaelbrockus/archlinux-host:latest"
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v3.0.1
     - run: |
         meson setup build -Dwith_tests=enabled &&
         cppcheck --project=build/compile_commands.json &&
