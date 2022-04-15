@@ -3,7 +3,7 @@
 // author: Michael Brockus
 // gmail: <michaelbrockus@gmail.com>
 //
-#include "miok/package.hpp"
+#include "hackazon/package.hpp"
 
 //
 // Should return a greeting message as it’s initial value
@@ -11,7 +11,7 @@
 // Param list:
 // -> There is none to speak of at this time.
 //
-const char *miok::greet(void)
+const char *hak::greet(void)
 {
     return "Hello, C++ Developer.";
 } // end of functions greet
