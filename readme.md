@@ -1,4 +1,4 @@
-# Miok package
+# Hackazon construct
 
 ## overview
 
@@ -10,9 +10,9 @@ Please add relevant information about your package.
 
 * * *
 
-Targeted audience we are building for is *Windows 10*, *MacOSX*, *ChromeOS*
-and *Linux* users. This project uses [Meson](https://mesonbuild.com/) `0.60.0`
-and newer, uses `c++20` standards for initial implementation of the package. The
+The targeted audience we are building for is *Windows 10*, *MacOSX*, *ChromeOS*
+and *Linux* users. This project uses [Meson](https://mesonbuild.com/) `0.62.0`
+and newer, uses `cpp20` standards for initial implementation of the package. The
 objective by far is usability, security, transparency, and lightweight, packages
 for any if not most of your application development needs.
 
@@ -25,22 +25,22 @@ in your subprojects directory and include the dependency in your project.
 
 ```console
 [wrap-git]
-directory = miok-module
-url = https://github.com/miok-modules/module.git
+directory = hackazon-construct
+url = https://github.com/hackazon-modules/construct-cpp.git
 revision = main
 
 [provide]
-module = module_dep
+module = hak_dep
 ```
 
 
 The next step should be to add the package to your Meson project:
 
 ```meson
-module_dep = dependency('miok-module')
+hak_dep = dependency('hackazon-construct')
 
 executable('prog', 'main.cpp',
-    dependencies : [module_dep])
+    dependencies : [hak_dep])
 
 ```
 
@@ -57,9 +57,9 @@ more please view the API documentation thanks.
 **Usage in C++**:
 
 ```cpp
-#include <iostream>
+#include <cstdio>
 #include <cstdlib>
-#include <miok/package.hpp>
+#include <hackazon/package.hpp>
 
 
 //
@@ -67,7 +67,7 @@ more please view the API documentation thanks.
 //
 int main()
 {
-    std::cout << miok::greet() << std::endl;
+    std::cout << hak::greet() << std::endl;
     return EXIT_SUCCESS;
 } // end of function main
 
