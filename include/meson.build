@@ -1,4 +1,4 @@
-add_project_arguments('-DBUILDING_HACKAZON_PACKAGE', language : 'cpp')
+add_project_arguments('-DBUILDING_TROGLOBYTE_PACKAGE', language : 'cpp')
 
 inc_dir = include_directories('.')
-install_headers(files('hackazon' / 'package.hpp'))
+install_headers(files('troglobyte' / 'package.hpp'))
