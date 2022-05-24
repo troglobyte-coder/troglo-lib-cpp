@@ -63,4 +63,4 @@ auto main() -> int
     RUN_TEST(test_simpleAssertCompare);
 
     return UNITY_END();
-} // end of function main
+} // end of func
