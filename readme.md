@@ -1,4 +1,4 @@
-# Hackazon construct
+# Troglobyte construct
 
 ## overview
 
@@ -25,22 +25,22 @@ in your subprojects directory and include the dependency in your project.
 
 ```console
 [wrap-git]
-directory = hackazon-construct
-url = https://github.com/hackazon-modules/construct-cpp.git
+directory = troglo-construct
+url = https://github.com/troglobyte-constructs/trog-name-cpp.git
 revision = main
 
 [provide]
-module = hak_dep
+module = trog_dep
 ```
 
 
 The next step should be to add the package to your Meson project:
 
 ```meson
-hak_dep = dependency('hackazon-construct')
+trog_dep = dependency('trog-construct')
 
 executable('prog', 'main.cpp',
-    dependencies : [hak_dep])
+    dependencies : [trog_dep])
 
 ```
 
@@ -57,9 +57,8 @@ more please view the API documentation thanks.
 **Usage in C++**:
 
 ```cpp
-#include <cstdio>
-#include <cstdlib>
-#include <hackazon/package.hpp>
+#include <iostream>
+#include <troglobyte/trog-package.hpp>
 
 
 //
@@ -67,8 +66,8 @@ more please view the API documentation thanks.
 //
 int main()
 {
-    std::cout << hak::greet() << std::endl;
-    return EXIT_SUCCESS;
+    std::cout << trog::greet() << std::endl;
+    return 0;
 } // end of function main
 
 ```
