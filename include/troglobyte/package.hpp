@@ -1,6 +1,7 @@
 //
-// HackerRank folio
-// solved by Michael Gene Brockus
+// Troglobyte construct:
+// author: Michael Gene Brockus
+// mail: <mailto: michaelbrockus@gmail.com>
 //
 #ifndef TROGLOBYTE_PACKAGE_HPP
 #define TROGLOBYTE_PACKAGE_HPP
