@@ -1,7 +1,7 @@
 //
-// file: test_cases.cpp
-// author: Michael Brockus
-// gmail: <michaelbrockus@gmail.com>
+// Troglobyte constructs:
+// author: Michael Gene Brockus
+// gmail: <mailto: michaelbrockus@gmail.com>
 //
 // USE CASE:
 //
@@ -9,7 +9,7 @@
 // project since its important to test once implementation against a set
 // of common test cases
 //
-#include "hackazon/package.hpp"
+#include "troglobyte/package.hpp"
 #include <unity.h>
 
 
@@ -29,31 +29,31 @@ void tearDown(void)
 //
 // list of all the test cases for this project
 //
-static void test_simpleAssertTrue(void)
+static void test_simpleAssertTrue()
 {
-    TEST_ASSERT_TRUE(1);
+    TEST_ASSERT_TRUE(true);
 } // end of test case
 
-static void test_simpleAssertNull(void)
+static void test_simpleAssertNull()
 {
     TEST_ASSERT_NULL(NULL);
 } // end of test case
 
-static void test_simpleAssertCompare(void)
+static void test_simpleAssertCompare()
 {
-    int dummy = 3;
+    auto dummy = 3;
     TEST_ASSERT_EQUAL_INT(3, dummy);
 } // end of test case
 
-static void test_simpleAssertCall(void)
+static void test_simpleAssertCall()
 {
-    TEST_ASSERT_EQUAL_STRING("Hello, C++ Developer.", hak::greet());
+    TEST_ASSERT_EQUAL_STRING("Hello, C++ Developer.", trog::greet());
 } // end of test case
 
 //
 //  here main is used as the test runner
 //
-int main(void)
+auto main() -> int
 {
     UNITY_BEGIN();
 
