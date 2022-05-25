@@ -1,13 +1,7 @@
 //
-// Troglobyte constructs:
+// Troglobyte construct:
 // author: Michael Gene Brockus
-// gmail: <mailto: michaelbrockus@gmail.com>
-//
-// USE CASE:
-//
-// The use case of this file is to contain the test cases needed by this
-// project since its important to test once implementation against a set
-// of common test cases
+// mail: <mailto: michaelbrockus@gmail.com>
 //
 #include "troglobyte/package.hpp"
 #include <unity.h>
