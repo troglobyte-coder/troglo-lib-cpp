@@ -1,7 +1,7 @@
 //
-// Troglobyte constructs:
+// Troglobyte construct:
 // author: Michael Gene Brockus
-// gmail: <mailto: michaelbrockus@gmail.com>
+// mail: <mailto: michaelbrockus@gmail.com>
 //
 #include "troglobyte/package.hpp"
 
