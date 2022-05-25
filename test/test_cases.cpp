@@ -22,7 +22,7 @@ TEST(testFixture, simpleAssertCompare)
 
 TEST(testFixture, simpleAssertCall)
 {
-    ASSERT_EQ("Hello, C++ Developer.", trog::greet());
+    ASSERT_STREQ("Hello, C++ Developer.", trog::greet());
 } // end of test case
 
 //
