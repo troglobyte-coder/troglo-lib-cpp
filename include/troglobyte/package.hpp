@@ -28,7 +28,7 @@
 
 namespace trog
 {
-    TROGLOBYTE_PUBLIC const char *greet(void);
+    TROGLOBYTE_PUBLIC const char *greet();
 
 } // namespace trog
 
