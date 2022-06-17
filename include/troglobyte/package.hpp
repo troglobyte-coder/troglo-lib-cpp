@@ -1,5 +1,5 @@
 //
-// Troglobyte construct:
+// Troglobyte stdlib:
 // author: Michael Gene Brockus
 // mail: <mailto: michaelbrockus@gmail.com>
 //
@@ -9,10 +9,12 @@
 //
 // Macros to control the visibility of functions provided by this package
 //
-#ifdef BUILDING_TROGLO_PACKAGE
+#ifdef BUILDING_TROGLOBYTE_PACKAGE
 #define TROGLOBYTE_PUBLIC __attribute__((visibility("default")))
+#define TROGLOBYTE_LOCAL __attribute__((visibility("hidden")))
 #else
 #define TROGLOBYTE_PUBLIC
+#define TROGLOBYTE_LOCAL
 #endif
 
 //
