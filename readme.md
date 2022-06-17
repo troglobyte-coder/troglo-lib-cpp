@@ -26,7 +26,7 @@ in your subprojects directory and include the dependency in your project.
 ```console
 [wrap-git]
 directory = troglo-construct
-url = https://github.com/troglobyte-constructs/trog-name-cpp.git
+url = https://github.com/troglobyte-stdlib/troglo-name-cpp.git
 revision = main
 
 [provide]
@@ -37,7 +37,7 @@ module = trog_dep
 The next step should be to add the package to your Meson project:
 
 ```meson
-trog_dep = dependency('trog-construct')
+trog_dep = dependency('troglo-construct')
 
 executable('prog', 'main.cpp',
     dependencies : [trog_dep])
@@ -57,8 +57,13 @@ more please view the API documentation thanks.
 **Usage in C++**:
 
 ```cpp
+//
+// Troglobyte stdlib:
+// author: Michael Gene Brockus
+// gmail: <michaelbrockus@gmail.com>
+//
 #include <iostream>
-#include <troglobyte/trog-package.hpp>
+#include <troglobyte/package.hpp>
 
 
 //
@@ -68,7 +73,7 @@ int main()
 {
     std::cout << trog::greet() << std::endl;
     return 0;
-} // end of function main
+} // end of func
 
 ```
 
@@ -79,4 +84,4 @@ regarding the solutions in the programming you can write
 me a letter, my Gmail is <michaelbrockus@gmail.com>.
 
 You may find that I have some social media platforms
-in which you can follow me. [LinkedIn](https://www.linkedin.com/in/michael-brockus), [Facebook](https://facebook.com/michael.brockus.555), and [Instagram](https://instagram.com/michael_gene_brockus/)
+in which you can follow me. [LinkedIn](https://www.linkedin.com/in/michael-brockus), [Facebook](https://facebook.com/michael.brockus.555), and [Instagram](https://instagram.com/troglobyte_coder/)
