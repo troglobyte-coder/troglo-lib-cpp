@@ -13,8 +13,8 @@ name: Host Windows CI
 on:
   push:
     paths:
-      - "**.c"
-      - "**.h"
+      - "**.cpp"
+      - "**.hpp"
       - "**.txt"
       - "**.build"
   pull_request:
@@ -22,8 +22,8 @@ on:
       - "main"
       - "next"
     paths:
-      - "**.c"
-      - "**.h"
+      - "**.cpp"
+      - "**.hpp"
       - "**.txt"
       - "**.build"
 
