@@ -1,8 +1,8 @@
-//
-// Troglobyte stdlib:
-// author: Michael Gene Brockus
-// mail: <mailto: michaelbrockus@gmail.com>
-//
+/*
+   Troglobyte stdlib:
+   author: Michael Gene Brockus
+   gmail: <michaelbrockus@gmail.com>
+*/
 #ifndef TROGLOBYTE_PACKAGE_HPP
 #define TROGLOBYTE_PACKAGE_HPP
 
@@ -32,4 +32,4 @@ namespace trog
 
 } // namespace trog
 
-#endif // end of TROGLOBYTE_PACKAGE_H
+#endif
