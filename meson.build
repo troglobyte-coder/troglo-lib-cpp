@@ -1,6 +1,6 @@
 project('Troglobyte Library', 'cpp',
     version: '0.1.0',
-    meson_version: '>=0.62.0',
+    meson_version: '>=0.63.0',
     default_options: ['werror=true', 'cpp_std=c++20'])
 
 
